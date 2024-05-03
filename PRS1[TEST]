@@ -131,7 +131,7 @@ MainFrame.BackgroundColor3 = Color3.new(0.490196, 0.490196, 0.490196)
 MainFrame.BorderColor3 = Color3.new(1, 1, 1)
 MainFrame.BorderSizePixel = 2
 MainFrame.Position = UDim2.new(0.00625485647, 0, 0.517282486, 0)
-MainFrame.Size = UDim2.new(0, 0, 0, 0)
+MainFrame.Size = UDim2.new(0, 220, 0, 300)
 MainFrame.Active = true
 MainFrame.Draggable = true
 
@@ -140,7 +140,7 @@ YeetusDeletus.Parent = MainFrame
 YeetusDeletus.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
 YeetusDeletus.BorderColor3 = Color3.new(1, 1, 1)
 YeetusDeletus.BorderSizePixel = 2
-YeetusDeletus.Position = UDim2.new(0.0337416567, 0, 0.27754283, 0)
+YeetusDeletus.Position = UDim2.new(0.0337416567, 0, 0.1, 0)
 YeetusDeletus.Size = UDim2.new(0, 200, 0, 230)
 
 Legendary.Name = "Legendary"
@@ -227,21 +227,6 @@ Premium.Text = "Premium"
 Premium.TextColor3 = Color3.new(1, 1, 1)
 Premium.TextSize = 14
 
-
-YeetusFetus.Name = "YeetusFetus"
-YeetusFetus.Parent = MainFrame
-YeetusFetus.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
-YeetusFetus.BorderColor3 = Color3.new(1, 1, 1)
-YeetusFetus.BorderSizePixel = 2
-YeetusFetus.Position = UDim2.new(0.520408392, 0, 0.27754283, 0)
-YeetusFetus.Size = UDim2.new(0, 200, 0, 230)
-
-UIListLayout_2.Parent = YeetusFetus
-UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout_2.VerticalAlignment = Enum.VerticalAlignment.Center
-UIListLayout_2.Padding = UDim.new(0.0500000007, 0)
-
 Title.Name = "Title"
 Title.Parent = MainFrame
 Title.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -249,7 +234,7 @@ Title.BackgroundTransparency = 1
 Title.Position = UDim2.new(0.332534194, 0, -0.000711294299, 0)
 Title.Size = UDim2.new(0, 150, 0, 30)
 Title.Font = Enum.Font.SourceSans
-Title.Text = "🐾Pet Ranch Simulator GUI by @TerraOnTop"
+Title.Text = "By @TerraOnTop"
 Title.TextColor3 = Color3.new(1, 1, 1)
 Title.TextSize = 14
 
