@@ -156,7 +156,7 @@ YeetusDeletus.Parent = MainFrame
 YeetusDeletus.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
 YeetusDeletus.BorderColor3 = Color3.new(1, 1, 1)
 YeetusDeletus.BorderSizePixel = 2
-YeetusDeletus.Position = UDim2.new(0.0337416567, 0, 0.27754283, 0)
+YeetusDeletus.Position = UDim2.new(0.0337416567, 0, 0.5, 0)
 YeetusDeletus.Size = UDim2.new(0, 200, 0, 230)
 
 Legendary.Name = "Legendary"
