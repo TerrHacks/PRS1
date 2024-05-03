@@ -1,10 +1,3 @@
---Check if theres a GUI open already
-do
-	local old = game:GetService("CoreGui"):FindFirstChild("PetRanchSimulator")
-    if old then
-        old:Destroy()
-    end
-end
 --Anti-Afk 4 u w33bs
 local VirtualUser=game:service'VirtualUser'
 game:service'Players'.LocalPlayer.Idled:connect(function()
@@ -154,7 +147,7 @@ MainFrame.Draggable = true
 YeetusDeletus.Name = "YeetusDeletus"
 YeetusDeletus.Parent = MainFrame
 YeetusDeletus.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
-YeetusDeletus.BorderColor3 = Color3.new(160, 95, 53)
+YeetusDeletus.BorderColor3 = Color3.new(1, 1, 1)
 YeetusDeletus.BorderSizePixel = 2
 YeetusDeletus.Position = UDim2.new(0.0337416567, 0, 0.15, 0)
 YeetusDeletus.Size = UDim2.new(0, 200, 0, 230)
