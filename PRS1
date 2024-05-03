@@ -67,13 +67,12 @@ local OpenRebirth = false
 
 
 local CommonIds = {
-	"rbxassetid://2904700052", --Dog // rarity = "Common"
-	"rbxassetid://2904700052", --Dog // rarity = "Common"
+	"rbxassetid://2904700052", --["Dog"] // rarity = "Common"
 	"rbxassetid://2867901095", --["White Cat"] // rarity = "Common"
-	"rbxassetid://2867901591", --Fox // rarity = "Common"
+	"rbxassetid://2867901591", --["Fox"] // rarity = "Common"
 	"rbxassetid://2867901783", --["Ice Cat"] // rarity = "Common"
-	"rbxassetid://2867899360", --Bat // rarity = "Common"
-	"rbxassetid://2882397782", --Wolf // rarity = "Common"
+	"rbxassetid://2867899360", --["Bat"] // rarity = "Common"
+	"rbxassetid://2882397782", --["Wolf"] // rarity = "Common"
 	"rbxassetid://2867900855", --["Brown Fox"] // rarity = "Common"
 	"rbxassetid://2867899497", --["Blue Butterfly"] // rarity = "Common"
 	"rbxassetid://2867902934", --["Snow Fox"] // rarity = "Common"
@@ -81,7 +80,7 @@ local CommonIds = {
 	"rbxassetid://2867902581", --["Polar Bear"] // rarity = "Common"
 }
 local UncommonIds = {
-	"rbxassetid://2867901021", --Bunny // rarity = "Uncommon"
+	"rbxassetid://2867901021", --["Bunny"] // rarity = "Uncommon"
 	"rbxassetid://2867902746", --["Ruby Bunny"] // rarity = "Uncommon"
 	"rbxassetid://2867903021", --["Stone Dog"] // rarity = "Uncommon"
 	"rbxassetid://2867902269", --["Midnight Cat"] // rarity = "Uncommon"
@@ -94,18 +93,20 @@ local RareIds = {
 	"rbxassetid://2867903214", --["Vampire Bat"] // rarity = "Rare"
 	"rbxassetid://2867901508", --["Flame Butterfly"] // rarity = "Rare"
 	"rbxassetid://2867901681", --["Frozen Wolf"] // rarity = "Rare"
-	"rbxassetid://2867903399", --Pegasus // rarity = "Rare"
-	"rbxassetid://2882848789", --Phoenix // rarity = "Rare"
+	"rbxassetid://2867903399", --["Pegasus"] // rarity = "Rare"
+	"rbxassetid://2882848789", --["Phoenix"] // rarity = "Rare"
 	"rbxassetid://2882868581", --["Demon Dragon"] // rarity = "Rare"
 	"rbxassetid://2911047813", --["Golden Cat"] // rarity = "Rare"
 	"rbxassetid://2911047925", --["Golden Dog"] // rarity = "Rare"
 	"rbxassetid://3877248666", --["Turkey"] // rarity = "Rare"
 	"rbxassetid://3877246998", --["Jellyfish"] // rarity = "Rare"
+	"rbxassetid://3877248140", --["Shiny Turkey"] // rarity = "Rare"
+	"rbxassetid://3877247625", --["Shiny Jellyfish"] // rarity = "Rare"
 
 }
 local EpicIds = {
 	"rbxassetid://2867899225", --["Angel Dog"] // rarity = "Epic"
-	"rbxassetid://2890673990", --Panda // rarity = "Epic"
+	"rbxassetid://2890673990", --["Panda"] // rarity = "Epic"
 	"rbxassetid://2867902195", --["Midnight Bat" // rarity = "Epic"
 	"rbxassetid://2867899412", --["Black Bear"] // rarity = "Epic"
 	"rbxassetid://2867901341", --["Dark Unicorn"] // rarity = "Epic"
@@ -113,18 +114,22 @@ local EpicIds = {
 	"rbxassetid://2911049629", --["Galaxy Dragon"] // rarity = "Epic"
 	"rbxassetid://3877248536", --["Tropical Monkey"] // rarity = "Epic"
 	"rbxassetid://3877246745", --["Ember Mouse"] // rarity = "Epic"
+	"rbxassetid://3877248031", --["Shiny Tropical Monkey"] // rarity = "Epic"
+	"rbxassetid://3877247400", --["Shiny Ember Mouse"] // rarity = "Epic"
 }
 local LegendaryIds = {
-	"rbxassetid://2867903124", --Unicorn // rarity = "Legendary"
+	"rbxassetid://2867903124", --["Unicorn"] // rarity = "Legendary"
 	"rbxassetid://2867899126", --["Android Dragon"] // rarity = "Legendary"
 	"rbxassetid://2867901873", --["Flame Fox"] // rarity = "Legendary"
 	"rbxassetid://2867903314", --["Vampire Dragon"] // rarity = "Legendary"
-	"rbxassetid://2867901180", --Cerberus // rarity = "Legendary"
+	"rbxassetid://2867901180", --["Cerberus"] // rarity = "Legendary"
 	"rbxassetid://2867902389", --["Monster Fox"] // rarity = "Legendary"
 	"rbxassetid://2868554099", --["Dark Serpent"] // rarity = "Legendary"
 	"rbxassetid://2912788391", --["Dark Phoenix"] // rarity = "Legendary"
 	"rbxassetid://2911048050", --["Luminous Fox"] // rarity = "Legendary"
-	"rbxassetid://1249021641", --Phowoenix // rarity = "Legendary"
+	"rbxassetid://1249021641", --["Phowoenix"] // rarity = "Legendary"
+	"rbxassetid://3877246877", --["Guardian Angel"] // rarity = "Legendary"
+
 }
 local PremiumIds = {
 	"rbxassetid://2890673718", --["Candy Unicorn"] // rarity = "Premium"
