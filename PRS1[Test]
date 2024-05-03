@@ -154,9 +154,9 @@ MainFrame.Draggable = true
 YeetusDeletus.Name = "YeetusDeletus"
 YeetusDeletus.Parent = MainFrame
 YeetusDeletus.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
-YeetusDeletus.BorderColor3 = Color3.new(1, 1, 1)
+YeetusDeletus.BorderColor3 = Color3.new(160, 95, 53)
 YeetusDeletus.BorderSizePixel = 2
-YeetusDeletus.Position = UDim2.new(0.0337416567, 0, 0.5, 0)
+YeetusDeletus.Position = UDim2.new(0.0337416567, 0, 0.15, 0)
 YeetusDeletus.Size = UDim2.new(0, 200, 0, 230)
 
 Legendary.Name = "Legendary"
@@ -173,7 +173,7 @@ Legendary.TextColor3 = Color3.new(1, 1, 1)
 Legendary.TextSize = 14
 
 Epic.Name = "Epic"
-Epic.Parent = YeetusDeletus
+Epic.Parent = 
 Epic.BackgroundColor3 = Color3.new(1, 0, 0)
 Epic.BorderColor3 = Color3.new(1, 1, 1)
 Epic.BorderSizePixel = 2
@@ -186,7 +186,7 @@ Epic.TextColor3 = Color3.new(1, 1, 1)
 Epic.TextSize = 14
 
 Common.Name = "Common"
-Common.Parent = YeetusDeletus
+Common.Parent = 
 Common.BackgroundColor3 = Color3.new(1, 0, 0)
 Common.BorderColor3 = Color3.new(1, 1, 1)
 Common.BorderSizePixel = 2
@@ -199,7 +199,7 @@ Common.TextColor3 = Color3.new(1, 1, 1)
 Common.TextSize = 14
 
 Uncommon.Name = "Uncommon"
-Uncommon.Parent = YeetusDeletus
+Uncommon.Parent = 
 Uncommon.BackgroundColor3 = Color3.new(1, 0, 0)
 Uncommon.BorderColor3 = Color3.new(1, 1, 1)
 Uncommon.BorderSizePixel = 2
@@ -212,7 +212,7 @@ Uncommon.TextColor3 = Color3.new(1, 1, 1)
 Uncommon.TextSize = 14
 
 Rare.Name = "Rare"
-Rare.Parent = YeetusDeletus
+Rare.Parent = 
 Rare.BackgroundColor3 = Color3.new(1, 0, 0)
 Rare.BorderColor3 = Color3.new(1, 1, 1)
 Rare.BorderSizePixel = 2
