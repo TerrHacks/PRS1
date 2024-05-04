@@ -11,7 +11,7 @@ game:service'Players'.LocalPlayer.Idled:connect(function()
 VirtualUser:CaptureController()
 VirtualUser:ClickButton2(Vector2.new())
 end)
---X2 Coins and X2 Luck Gamepasses by NAME4YOU#1192
+--X2 Coins and X2 Luck Gamepasses
 local plr = game.Players.LocalPlayer.Name
 local statdisplay = game.ReplicatedStorage[plr.."StatDisplay"]
 
