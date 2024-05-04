@@ -775,7 +775,6 @@ end))
 
 while true do
 	wait(1)
-game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer("CollectTreasure", "TreasureChest")
 	if DeleteCommon then
 		CommonDeletus()
 	end
