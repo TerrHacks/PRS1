@@ -53,9 +53,9 @@ local TextButton = Instance.new("TextButton")
 
 local DeleteCommon = false
 local DeleteUncommon = false
-local DeleteRare = true
-local DeleteEpic = true
-local DeleteLegendary = true
+local DeleteRare = false
+local DeleteEpic = false
+local DeleteLegendary = false
 local DeleteLegendaryPremium = false
 
 local Open1 = false
