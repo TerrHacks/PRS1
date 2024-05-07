@@ -294,7 +294,7 @@ UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 UIListLayout_2.VerticalAlignment = Enum.VerticalAlignment.Center
 UIListLayout_2.Padding = UDim.new(0.0500000007, 0)
 
-ALegendary.Name = "ALegendary"
+ALegendary.Name = "AuraLegendary"
 ALegendary.Parent = YeetusFetus
 ALegendary.BackgroundColor3 = Color3.new(1, 0, 0)
 ALegendary.BorderColor3 = Color3.new(1, 1, 1)
@@ -303,11 +303,11 @@ ALegendary.LayoutOrder = 5
 ALegendary.Position = UDim2.new(0.0549999997, 0, -0.123931631, 0)
 ALegendary.Size = UDim2.new(0, 175, 0, 25)
 ALegendary.Font = Enum.Font.SourceSans
-ALegendary.Text = "ALegendary"
+ALegendary.Text = "AuraLegendary"
 ALegendary.TextColor3 = Color3.new(1, 1, 1)
 ALegendary.TextSize = 14
 
-AEpic.Name = "AEpic"
+AEpic.Name = "AuraEpic"
 AEpic.Parent = YeetusFetus
 AEpic.BackgroundColor3 = Color3.new(1, 0, 0)
 AEpic.BorderColor3 = Color3.new(1, 1, 1)
@@ -316,11 +316,11 @@ AEpic.LayoutOrder = 4
 AEpic.Position = UDim2.new(0.0599999987, 0, 0.0341880359, 0)
 AEpic.Size = UDim2.new(0, 175, 0, 25)
 AEpic.Font = Enum.Font.SourceSans
-AEpic.Text = "AEpic"
+AEpic.Text = "AuraEpic"
 AEpic.TextColor3 = Color3.new(1, 1, 1)
 AEpic.TextSize = 14
 
-ACommon.Name = "ACommon"
+ACommon.Name = "AuraCommon"
 ACommon.Parent = YeetusFetus
 ACommon.BackgroundColor3 = Color3.new(1, 0, 0)
 ACommon.BorderColor3 = Color3.new(1, 1, 1)
@@ -329,11 +329,11 @@ ACommon.LayoutOrder = 1
 ACommon.Position = UDim2.new(0.0599999987, 0, 0.0341880359, 0)
 ACommon.Size = UDim2.new(0, 175, 0, 25)
 ACommon.Font = Enum.Font.SourceSans
-ACommon.Text = "ACommon"
+ACommon.Text = "AuraCommon"
 ACommon.TextColor3 = Color3.new(1, 1, 1)
 ACommon.TextSize = 14
 
-AUncommon.Name = "AUncommon"
+AUncommon.Name = "AuraUncommon"
 AUncommon.Parent = YeetusFetus
 AUncommon.BackgroundColor3 = Color3.new(1, 0, 0)
 AUncommon.BorderColor3 = Color3.new(1, 1, 1)
@@ -342,11 +342,11 @@ AUncommon.LayoutOrder = 2
 AUncommon.Position = UDim2.new(0.0599999987, 0, 0.0341880359, 0)
 AUncommon.Size = UDim2.new(0, 175, 0, 25)
 AUncommon.Font = Enum.Font.SourceSans
-AUncommon.Text = "AUncommon"
+AUncommon.Text = "AuraUncommon"
 AUncommon.TextColor3 = Color3.new(1, 1, 1)
 AUncommon.TextSize = 14
 
-ARare.Name = "ARare"
+ARare.Name = "AuraRare"
 ARare.Parent = YeetusFetus
 ARare.BackgroundColor3 = Color3.new(1, 0, 0)
 ARare.BorderColor3 = Color3.new(1, 1, 1)
@@ -355,11 +355,11 @@ ARare.LayoutOrder = 3
 ARare.Position = UDim2.new(0.114999995, 0, -0.141025648, 0)
 ARare.Size = UDim2.new(0, 175, 0, 25)
 ARare.Font = Enum.Font.SourceSans
-ARare.Text = "ARare"
+ARare.Text = "AuraRare"
 ARare.TextColor3 = Color3.new(1, 1, 1)
 ARare.TextSize = 14
 
-APremium.Name = "APremium"
+APremium.Name = "AuraPremium"
 APremium.Parent = YeetusFetus
 APremium.BackgroundColor3 = Color3.new(1, 0, 0)
 APremium.BorderColor3 = Color3.new(1, 1, 1)
@@ -368,7 +368,7 @@ APremium.LayoutOrder = 6
 APremium.Position = UDim2.new(0.0599999987, 0, 0.0341880359, 0)
 APremium.Size = UDim2.new(0, 175, 0, 25)
 APremium.Font = Enum.Font.SourceSans
-APremium.Text = "APremium"
+APremium.Text = "AuraPremium"
 APremium.TextColor3 = Color3.new(1, 1, 1)
 APremium.TextSize = 14
 
@@ -658,8 +658,8 @@ Premium.MouseButton1Click:connect(function()
 end)
 
 ACommon.MouseButton1Click:connect(function()
-	ACommon = not ACommon
-	if ACommon then
+	DeleteACommon = not DeleteACommon
+	if DeleteACommon then
 		ACommon.BackgroundColor3 = Color3.new(0,1,0)
 	else
 		ACommon.BackgroundColor3 = Color3.new(1,0,0)
@@ -667,8 +667,8 @@ ACommon.MouseButton1Click:connect(function()
 end)
 
 AUncommon.MouseButton1Click:connect(function()
-	AUncommon = not AUncommon
-	if AUncommon then
+	DeleteAUncommon = not DeleteAUncommon
+	if DeleteAUncommon then
 		AUncommon.BackgroundColor3 = Color3.new(0,1,0)
 	else
 		AUncommon.BackgroundColor3 = Color3.new(1,0,0)
@@ -676,8 +676,8 @@ AUncommon.MouseButton1Click:connect(function()
 end)
 
 ARare.MouseButton1Click:connect(function()
-	ARare = not ARare
-	if ARare then
+	DeleteARare = not DeleteARare
+	if DeleteARare then
 		ARare.BackgroundColor3 = Color3.new(0,1,0)
 	else
 		ARare.BackgroundColor3 = Color3.new(1,0,0)
@@ -685,8 +685,8 @@ ARare.MouseButton1Click:connect(function()
 end)
 
 AEpic.MouseButton1Click:connect(function()
-	AEpic = not AEpic
-	if AEpic then
+	DeleteAEpic = not DeleteAEpic
+	if DeleteAEpic then
 		AEpic.BackgroundColor3 = Color3.new(0,1,0)
 	else
 		AEpic.BackgroundColor3 = Color3.new(1,0,0)
@@ -694,8 +694,8 @@ AEpic.MouseButton1Click:connect(function()
 end)
 
 ALegendary.MouseButton1Click:connect(function()
-	ALegendary = not ALegendary
-	if ALegendary then
+	DeleteALegendary = not ALegendary
+	if DeleteALegendary then
 		ALegendary.BackgroundColor3 = Color3.new(0,1,0)
 	else
 		ALegendary.BackgroundColor3 = Color3.new(1,0,0)
@@ -703,7 +703,7 @@ ALegendary.MouseButton1Click:connect(function()
 end)
 
 APremium.MouseButton1Click:connect(function()
-	APremium = not APremium
+	DeleteAPremium = not APremium
 	if APremium then
 		APremium.BackgroundColor3 = Color3.new(0,1,0)
 	else
@@ -803,27 +803,7 @@ print("byte-chan™#5250 <3 ")
 loadstring(game:HttpGet("https://pastebin.com/raw/twKzauPW", true))() --REDEEM CODES
 coroutine.resume(coroutine.create(function()
 	local hb = game:GetService("RunService").Heartbeat
-while true do
-	wait(0.1)
-	if DeleteACommon then
-		ACommonDeletus()
-	end
-	if DeleteUncommon then
-		AUncommonDeletus()
-	end
-	if DeleteARare then
-		ARareDeletus()
-	end
-	if DeleteAEpic then
-		AEpicDeletus()
-	end
-	if DeleteALegendary then
-		ALegendaryDeletus()
-	end
-	if DeleteAPremium then
-		APremiumDeletus()
-	end
-end
+end))
 
 while true do
 	wait(0.1)
@@ -844,5 +824,24 @@ while true do
 	end
 	if DeletePremium then
 		PremiumDeletus()
+        end
+	wait(0.1)
+	if DeleteACommon then
+		ACommonDeletus()
 	end
-end
+	if DeleteUncommon then
+		AUncommonDeletus()
+	end
+	if DeleteARare then
+		ARareDeletus()
+	end
+	if DeleteAEpic then
+		AEpicDeletus()
+	end
+	if DeleteALegendary then
+		ALegendaryDeletus()
+	end
+	if DeleteAPremium then
+		APremiumDeletus()
+	end
+    end
