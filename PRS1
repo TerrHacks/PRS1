@@ -548,7 +548,7 @@ function ACommonDeletus()
 		if v:IsA("ImageButton") then
 			for i = 1,#ACommonIds do
 				if v.PetImage.Image == ACommonIds[i] then
-					mre:FireServer("DeletePetInInventory", v.Name)
+					mre:FireServer("DeleteAuraInInventory", v.Name)
 				end
 			end
 		end
@@ -658,8 +658,8 @@ Premium.MouseButton1Click:connect(function()
 end)
 
 ACommon.MouseButton1Click:connect(function()
-	Open1 = not Open1
-	if Open1 then
+	ACommon = not ACommon
+	if ACommon then
 		ACommon.BackgroundColor3 = Color3.new(0,1,0)
 	else
 		ACommon.BackgroundColor3 = Color3.new(1,0,0)
@@ -667,8 +667,8 @@ ACommon.MouseButton1Click:connect(function()
 end)
 
 AUncommon.MouseButton1Click:connect(function()
-	Open2 = not Open2
-	if Open2 then
+	AUncommon = not AUncommon
+	if AUncommon then
 		AUncommon.BackgroundColor3 = Color3.new(0,1,0)
 	else
 		AUncommon.BackgroundColor3 = Color3.new(1,0,0)
@@ -676,8 +676,8 @@ AUncommon.MouseButton1Click:connect(function()
 end)
 
 ARare.MouseButton1Click:connect(function()
-	Open3 = not Open3
-	if Open3 then
+	ARare = not ARare
+	if ARare then
 		ARare.BackgroundColor3 = Color3.new(0,1,0)
 	else
 		ARare.BackgroundColor3 = Color3.new(1,0,0)
@@ -685,8 +685,8 @@ ARare.MouseButton1Click:connect(function()
 end)
 
 AEpic.MouseButton1Click:connect(function()
-	Open4 = not Open4
-	if Open4 then
+	AEpic = not AEpic
+	if AEpic then
 		AEpic.BackgroundColor3 = Color3.new(0,1,0)
 	else
 		AEpic.BackgroundColor3 = Color3.new(1,0,0)
@@ -694,8 +694,8 @@ AEpic.MouseButton1Click:connect(function()
 end)
 
 ALegendary.MouseButton1Click:connect(function()
-	Open5 = not Open5
-	if Open5 then
+	ALegendary = not ALegendary
+	if ALegendary then
 		ALegendary.BackgroundColor3 = Color3.new(0,1,0)
 	else
 		ALegendary.BackgroundColor3 = Color3.new(1,0,0)
@@ -703,8 +703,8 @@ ALegendary.MouseButton1Click:connect(function()
 end)
 
 APremium.MouseButton1Click:connect(function()
-	OpenRebirth = not OpenRebirth
-	if OpenRebirth then
+	APremium = not APremium
+	if APremium then
 		APremium.BackgroundColor3 = Color3.new(0,1,0)
 	else
 		APremium.BackgroundColor3 = Color3.new(1,0,0)
