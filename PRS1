@@ -58,12 +58,12 @@ local DeleteEpic = false
 local DeleteLegendary = false
 local DeleteLegendaryPremium = false
 
-local Open1 = false
-local Open2 = false
-local Open3 = false
-local Open4 = false
-local Open5 = false
-local OpenRebirth = false
+local DeleteACommon = false
+local DeleteAUncommon = false
+local DeleteARare = false
+local DeleteAEpic = false
+local DeleteALegendary = false
+local DeleteAPremium = false
 
 
 local CommonIds = {
@@ -306,7 +306,7 @@ Teir5Egg.LayoutOrder = 5
 Teir5Egg.Position = UDim2.new(0.0549999997, 0, -0.123931631, 0)
 Teir5Egg.Size = UDim2.new(0, 175, 0, 25)
 Teir5Egg.Font = Enum.Font.SourceSans
-Teir5Egg.Text = "Tier 5 Egg"
+Teir5Egg.Text = "Legendary"
 Teir5Egg.TextColor3 = Color3.new(1, 1, 1)
 Teir5Egg.TextSize = 14
 
@@ -319,7 +319,7 @@ Teir4Egg.LayoutOrder = 4
 Teir4Egg.Position = UDim2.new(0.0599999987, 0, 0.0341880359, 0)
 Teir4Egg.Size = UDim2.new(0, 175, 0, 25)
 Teir4Egg.Font = Enum.Font.SourceSans
-Teir4Egg.Text = "Tier 4 Egg"
+Teir4Egg.Text = "Epic"
 Teir4Egg.TextColor3 = Color3.new(1, 1, 1)
 Teir4Egg.TextSize = 14
 
@@ -332,7 +332,7 @@ Teir1Egg.LayoutOrder = 1
 Teir1Egg.Position = UDim2.new(0.0599999987, 0, 0.0341880359, 0)
 Teir1Egg.Size = UDim2.new(0, 175, 0, 25)
 Teir1Egg.Font = Enum.Font.SourceSans
-Teir1Egg.Text = "Tier 1 Egg"
+Teir1Egg.Text = "Common"
 Teir1Egg.TextColor3 = Color3.new(1, 1, 1)
 Teir1Egg.TextSize = 14
 
@@ -345,7 +345,7 @@ Teir2Egg.LayoutOrder = 2
 Teir2Egg.Position = UDim2.new(0.0599999987, 0, 0.0341880359, 0)
 Teir2Egg.Size = UDim2.new(0, 175, 0, 25)
 Teir2Egg.Font = Enum.Font.SourceSans
-Teir2Egg.Text = "Tier 2 Egg"
+Teir2Egg.Text = "Uncommon"
 Teir2Egg.TextColor3 = Color3.new(1, 1, 1)
 Teir2Egg.TextSize = 14
 
@@ -358,7 +358,7 @@ Teir3Egg.LayoutOrder = 3
 Teir3Egg.Position = UDim2.new(0.114999995, 0, -0.141025648, 0)
 Teir3Egg.Size = UDim2.new(0, 175, 0, 25)
 Teir3Egg.Font = Enum.Font.SourceSans
-Teir3Egg.Text = "Tier 3 Egg"
+Teir3Egg.Text = "Rare"
 Teir3Egg.TextColor3 = Color3.new(1, 1, 1)
 Teir3Egg.TextSize = 14
 
@@ -371,7 +371,7 @@ RebirthEgg.LayoutOrder = 6
 RebirthEgg.Position = UDim2.new(0.0599999987, 0, 0.0341880359, 0)
 RebirthEgg.Size = UDim2.new(0, 175, 0, 25)
 RebirthEgg.Font = Enum.Font.SourceSans
-RebirthEgg.Text = "Rebirth Egg"
+RebirthEgg.Text = "Premium"
 RebirthEgg.TextColor3 = Color3.new(1, 1, 1)
 RebirthEgg.TextSize = 14
 
@@ -546,7 +546,7 @@ function PremiumDeletus()
 end
 
 local mrf = game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction
-function CommonDeletus()
+function ACommonDeletus()
 	for _,v in pairs(game.Players.LocalPlayer.PlayerGui.MainGui.CenterUIFrame.PetInventory.AuraInventoryInnerFrame.AuraInventoryScrollingFrame:GetChildren()) do 
 		if v:IsA("ImageButton") then
 			for i = 1,#ACommonIds do
@@ -558,7 +558,7 @@ function CommonDeletus()
 	end
 end
 
-function UncommonDeletus()
+function AUncommonDeletus()
 	for _,v in pairs(game.Players.LocalPlayer.PlayerGui.MainGui.CenterUIFrame.PetInventory.AuraInventoryInnerFrame.AuraInventoryScrollingFrame:GetChildren()) do 
 		if v:IsA("ImageButton") then
 			for i = 1,#AUncommonIds do
@@ -570,7 +570,7 @@ function UncommonDeletus()
 	end
 end
 
-function RareDeletus()
+function ARareDeletus()
 	for _,v in pairs(game.Players.LocalPlayer.PlayerGui.MainGui.CenterUIFrame.PetInventory.AuraInventoryInnerFrame.AuraInventoryScrollingFrame:GetChildren()) do 
 		if v:IsA("ImageButton") then
 			for i = 1,#ARareIds do
@@ -582,7 +582,7 @@ function RareDeletus()
 	end
 end
 
-function EpicDeletus()
+function AEpicDeletus()
 	for _,v in pairs(game.Players.LocalPlayer.PlayerGui.MainGui.CenterUIFrame.PetInventory.AuraInventoryInnerFrame.AuraInventoryScrollingFrame:GetChildren()) do 
 		if v:IsA("ImageButton") then
 			for i = 1,#AEpicIds do
@@ -594,7 +594,7 @@ function EpicDeletus()
 	end
 end
 
-function LegendaryDeletus()
+function ALegendaryDeletus()
 	for _,v in pairs(game.Players.LocalPlayer.PlayerGui.MainGui.CenterUIFrame.PetInventory.AuraInventoryInnerFrame.AuraInventoryScrollingFrame:GetChildren()) do 
 		if v:IsA("ImageButton") then
 			for i = 1,#ALegendaryIds do
@@ -806,31 +806,30 @@ print("byte-chan™#5250 <3 ")
 loadstring(game:HttpGet("https://pastebin.com/raw/twKzauPW", true))() --REDEEM CODES
 coroutine.resume(coroutine.create(function()
 	local hb = game:GetService("RunService").Heartbeat
-	while true do
-		if Open1 then
-			Open1Function()
-		end
-		if Open2 then
-			Open2Function()
-		end
-		if Open3 then
-			Open3Function()
-		end
-		if Open4 then
-			Open4Function()
-		end
-		if Open5 then
-			Open5Function()
-		end
-		if OpenRebirth then 
-			OpenRebirthFunction()
-		end
-		hb:wait()
+while true do
+	wait(0.1)
+	if DeleteACommon then
+		ACommonDeletus()
+	end
+	if DeleteUncommon then
+		AUncommonDeletus()
+	end
+	if DeleteARare then
+		ARareDeletus()
+	end
+	if DeleteAEpic then
+		AEpicDeletus()
+	end
+	if DeleteALegendary then
+		ALegendaryDeletus()
+	end
+	if DeleteAPremium then
+		APremiumDeletus()
 	end
 end))
 
 while true do
-	wait(1)
+	wait(0.1)
 	if DeleteCommon then
 		CommonDeletus()
 	end
