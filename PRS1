@@ -390,7 +390,7 @@ Title_2.BackgroundTransparency = 1
 Title_2.Position = UDim2.new(0.0331437178, 0, 0.204991266, 0)
 Title_2.Size = UDim2.new(0, 200, 0, 23)
 Title_2.Font = Enum.Font.SourceSans
-Title_2.Text = "Delete Tier"
+Title_2.Text = "Delete Pets"
 Title_2.TextColor3 = Color3.new(1, 1, 1)
 Title_2.TextSize = 14
 
@@ -401,7 +401,7 @@ Title_3.BackgroundTransparency = 1
 Title_3.Position = UDim2.new(0.519810379, 0, 0.204991266, 0)
 Title_3.Size = UDim2.new(0, 200, 0, 23)
 Title_3.Font = Enum.Font.SourceSans
-Title_3.Text = "Open Egg"
+Title_3.Text = "Delete Aura"
 Title_3.TextColor3 = Color3.new(1, 1, 1)
 Title_3.TextSize = 14
 
