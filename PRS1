@@ -11,7 +11,7 @@ game:service'Players'.LocalPlayer.Idled:connect(function()
 VirtualUser:CaptureController()
 VirtualUser:ClickButton2(Vector2.new())
 end)
---X2 Coins and X2 Luck Gamepasses
+--X2 Coins and X2 Luck Gamepasses by NAME4YOU#1192
 local plr = game.Players.LocalPlayer.Name
 local statdisplay = game.ReplicatedStorage[plr.."StatDisplay"]
 
@@ -135,20 +135,36 @@ local LegendaryIds = {
 	"rbxassetid://2911048050", --["Luminous Fox"] // rarity = "Legendary"
 	"rbxassetid://1249021641", --["Phowoenix"] // rarity = "Legendary"
 	"rbxassetid://3877246877", --["Guardian Angel"] // rarity = "Legendary"
-	"rbxassetid://3877247516", --["Shiny Guardian Angel"] // rarity = "Legendary"
 	"rbxassetid://3656843464", --["Rift Observer"] // rarity = "Legendary"
 	"rbxassetid://3652596674", --["Shiny Rift Observer"] // rarity = "Legendary"
-	"rbxassetid://3877247131", --["Lightnig Satyr"] // rarity = "Legendary"
-	"rbxassetid://3877246549", --["Ancient Dragon"] // rarity = "Legendary"
-	"rbxassetid://3652597389", --["Warped Wraith"] // rarity = "Legendary"
 
 }
 local PremiumIds = {
-	"rbxassetid://2890673718", --["Candy Unicorn"] // rarity = "Premium"
-	"rbxassetid://2867901957", --["Flame Wolf"] // rarity = "Premium"
-	"rbxassetid://2867902128", --["Light Serpent"] // rarity = "Premium"
-	"rbxassetid://2890741059", --["Inferno Fox"] // rarity = "Premium"
+
 }
+local ACommonIds = {
+	"rbxassetid://", --["Feathered Aura"] // rarity = "Common"
+
+}
+local AUncommonIds = {
+	"rbxassetid://2867901021", --["Bunny"] // rarity = "Uncommon"
+
+}
+local ARareIds = {
+	"rbxassetid://4013448900", --["Feathered Aura"] // rarity = "Rare"
+	"rbxassetid://4013449018", --["Goo Aura"] // rarity = "Rare"
+
+}
+local AEpicIds = {
+	"rbxassetid://4013449146", --["Heart Aura"] // rarity = "Epic"
+	"rbxassetid://4013449484", --["Musical Aura"] // rarity = "Epic"
+
+}
+local ALegendaryIds = {
+	"rbxassetid://2867903124", --["Unicorn"] // rarity = "Legendary"
+
+}
+
 --Properties:
 PetRanchSimulator.Name = "PetRanchSimulator"
 PetRanchSimulator.Parent = game.CoreGui
@@ -281,7 +297,7 @@ UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 UIListLayout_2.VerticalAlignment = Enum.VerticalAlignment.Center
 UIListLayout_2.Padding = UDim.new(0.0500000007, 0)
 
-Teir5Egg.Name = "Teir 5 Egg"
+Teir5Egg.Name = "Legendary"
 Teir5Egg.Parent = YeetusFetus
 Teir5Egg.BackgroundColor3 = Color3.new(1, 0, 0)
 Teir5Egg.BorderColor3 = Color3.new(1, 1, 1)
@@ -294,7 +310,7 @@ Teir5Egg.Text = "Tier 5 Egg"
 Teir5Egg.TextColor3 = Color3.new(1, 1, 1)
 Teir5Egg.TextSize = 14
 
-Teir4Egg.Name = "Teir 4 Egg"
+Teir4Egg.Name = "Epic"
 Teir4Egg.Parent = YeetusFetus
 Teir4Egg.BackgroundColor3 = Color3.new(1, 0, 0)
 Teir4Egg.BorderColor3 = Color3.new(1, 1, 1)
@@ -307,7 +323,7 @@ Teir4Egg.Text = "Tier 4 Egg"
 Teir4Egg.TextColor3 = Color3.new(1, 1, 1)
 Teir4Egg.TextSize = 14
 
-Teir1Egg.Name = "Teir 1 Egg"
+Teir1Egg.Name = "Common"
 Teir1Egg.Parent = YeetusFetus
 Teir1Egg.BackgroundColor3 = Color3.new(1, 0, 0)
 Teir1Egg.BorderColor3 = Color3.new(1, 1, 1)
@@ -320,7 +336,7 @@ Teir1Egg.Text = "Tier 1 Egg"
 Teir1Egg.TextColor3 = Color3.new(1, 1, 1)
 Teir1Egg.TextSize = 14
 
-Teir2Egg.Name = "Teir 2 Egg"
+Teir2Egg.Name = "Uncommon"
 Teir2Egg.Parent = YeetusFetus
 Teir2Egg.BackgroundColor3 = Color3.new(1, 0, 0)
 Teir2Egg.BorderColor3 = Color3.new(1, 1, 1)
@@ -333,7 +349,7 @@ Teir2Egg.Text = "Tier 2 Egg"
 Teir2Egg.TextColor3 = Color3.new(1, 1, 1)
 Teir2Egg.TextSize = 14
 
-Teir3Egg.Name = "Teir 3 Egg"
+Teir3Egg.Name = "Rare"
 Teir3Egg.Parent = YeetusFetus
 Teir3Egg.BackgroundColor3 = Color3.new(1, 0, 0)
 Teir3Egg.BorderColor3 = Color3.new(1, 1, 1)
@@ -346,7 +362,7 @@ Teir3Egg.Text = "Tier 3 Egg"
 Teir3Egg.TextColor3 = Color3.new(1, 1, 1)
 Teir3Egg.TextSize = 14
 
-RebirthEgg.Name = "Rebirth Egg"
+RebirthEgg.Name = "Premium"
 RebirthEgg.Parent = YeetusFetus
 RebirthEgg.BackgroundColor3 = Color3.new(1, 0, 0)
 RebirthEgg.BorderColor3 = Color3.new(1, 1, 1)
@@ -530,28 +546,64 @@ function PremiumDeletus()
 end
 
 local mrf = game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction
-function Open1Function()
-	mrf:InvokeServer("BuyEgg", "Tier1Egg")
+function CommonDeletus()
+	for _,v in pairs(game.Players.LocalPlayer.PlayerGui.MainGui.CenterUIFrame.PetInventory.AuraInventoryInnerFrame.AuraInventoryScrollingFrame:GetChildren()) do 
+		if v:IsA("ImageButton") then
+			for i = 1,#ACommonIds do
+				if v.PetImage.Image == ACommonIds[i] then
+					mre:FireServer("DeletePetInInventory", v.Name)
+				end
+			end
+		end
+	end
 end
 
-function Open2Function()
-	mrf:InvokeServer("BuyEgg", "Tier2Egg")
+function UncommonDeletus()
+	for _,v in pairs(game.Players.LocalPlayer.PlayerGui.MainGui.CenterUIFrame.PetInventory.AuraInventoryInnerFrame.AuraInventoryScrollingFrame:GetChildren()) do 
+		if v:IsA("ImageButton") then
+			for i = 1,#AUncommonIds do
+				if v.PetImage.Image == AUncommonIds[i] then
+					mre:FireServer("DeleteAuraInInventory", v.Name)
+				end
+			end
+		end
+	end
 end
 
-function Open3Function()
-	mrf:InvokeServer("BuyEgg", "Tier3Egg")
+function RareDeletus()
+	for _,v in pairs(game.Players.LocalPlayer.PlayerGui.MainGui.CenterUIFrame.PetInventory.AuraInventoryInnerFrame.AuraInventoryScrollingFrame:GetChildren()) do 
+		if v:IsA("ImageButton") then
+			for i = 1,#ARareIds do
+				if v.PetImage.Image == ARareIds[i] then
+					mre:FireServer("DeleteAuraInInventory", v.Name)
+				end
+			end
+		end
+	end
 end
 
-function Open4Function()
-	mrf:InvokeServer("BuyEgg", "Tier4Egg")
+function EpicDeletus()
+	for _,v in pairs(game.Players.LocalPlayer.PlayerGui.MainGui.CenterUIFrame.PetInventory.AuraInventoryInnerFrame.AuraInventoryScrollingFrame:GetChildren()) do 
+		if v:IsA("ImageButton") then
+			for i = 1,#AEpicIds do
+				if v.PetImage.Image == AEpicIds[i] then
+					mre:FireServer("DeleteAuraInInventory", v.Name)
+				end
+			end
+		end
+	end
 end
 
-function Open5Function()
-	mrf:InvokeServer("BuyEgg", "Tier5Egg")
-end
-
-function OpenRebirthFunction()
-	mrf:InvokeServer("BuyEgg", "RebirthEgg")
+function LegendaryDeletus()
+	for _,v in pairs(game.Players.LocalPlayer.PlayerGui.MainGui.CenterUIFrame.PetInventory.AuraInventoryInnerFrame.AuraInventoryScrollingFrame:GetChildren()) do 
+		if v:IsA("ImageButton") then
+			for i = 1,#ALegendaryIds do
+				if v.PetImage.Image == ALegendaryIds[i] then
+					mre:FireServer("DeleteAuraInInventory", v.Name)
+				end
+			end
+		end
+	end
 end
 
 Common.MouseButton1Click:connect(function()
