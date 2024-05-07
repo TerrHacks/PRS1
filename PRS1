@@ -30,12 +30,12 @@ local Premium = Instance.new("TextButton")
 local Equip = Instance.new("TextButton")
 local YeetusFetus = Instance.new("Frame")
 local UIListLayout_2 = Instance.new("UIListLayout")
-local Teir5Egg = Instance.new("TextButton")
-local Teir4Egg = Instance.new("TextButton")
-local Teir1Egg = Instance.new("TextButton")
-local Teir2Egg = Instance.new("TextButton")
-local Teir3Egg = Instance.new("TextButton")
-local RebirthEgg = Instance.new("TextButton")
+local ALegendary = Instance.new("TextButton")
+local AEpic = Instance.new("TextButton")
+local ACommon = Instance.new("TextButton")
+local AUncommon = Instance.new("TextButton")
+local ARare = Instance.new("TextButton")
+local APremium = Instance.new("TextButton")
 local Title = Instance.new("TextLabel")
 local Title_2 = Instance.new("TextLabel")
 local Title_3 = Instance.new("TextLabel")
@@ -155,6 +155,10 @@ local AEpicIds = {
 }
 local ALegendaryIds = {
 	"rbxassetid://2867903124", --["Unicorn"] // rarity = "Legendary"
+
+}
+local ALPremiumIds = {
+	"rbxassetid://", --[""] // rarity = "Premium"
 
 }
 
@@ -290,83 +294,83 @@ UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 UIListLayout_2.VerticalAlignment = Enum.VerticalAlignment.Center
 UIListLayout_2.Padding = UDim.new(0.0500000007, 0)
 
-Teir5Egg.Name = "Legendary"
-Teir5Egg.Parent = YeetusFetus
-Teir5Egg.BackgroundColor3 = Color3.new(1, 0, 0)
-Teir5Egg.BorderColor3 = Color3.new(1, 1, 1)
-Teir5Egg.BorderSizePixel = 2
-Teir5Egg.LayoutOrder = 5
-Teir5Egg.Position = UDim2.new(0.0549999997, 0, -0.123931631, 0)
-Teir5Egg.Size = UDim2.new(0, 175, 0, 25)
-Teir5Egg.Font = Enum.Font.SourceSans
-Teir5Egg.Text = "Legendary"
-Teir5Egg.TextColor3 = Color3.new(1, 1, 1)
-Teir5Egg.TextSize = 14
+ALegendary.Name = "ALegendary"
+ALegendary.Parent = YeetusFetus
+ALegendary.BackgroundColor3 = Color3.new(1, 0, 0)
+ALegendary.BorderColor3 = Color3.new(1, 1, 1)
+ALegendary.BorderSizePixel = 2
+ALegendary.LayoutOrder = 5
+ALegendary.Position = UDim2.new(0.0549999997, 0, -0.123931631, 0)
+ALegendary.Size = UDim2.new(0, 175, 0, 25)
+ALegendary.Font = Enum.Font.SourceSans
+ALegendary.Text = "ALegendary"
+ALegendary.TextColor3 = Color3.new(1, 1, 1)
+ALegendary.TextSize = 14
 
-Teir4Egg.Name = "Epic"
-Teir4Egg.Parent = YeetusFetus
-Teir4Egg.BackgroundColor3 = Color3.new(1, 0, 0)
-Teir4Egg.BorderColor3 = Color3.new(1, 1, 1)
-Teir4Egg.BorderSizePixel = 2
-Teir4Egg.LayoutOrder = 4
-Teir4Egg.Position = UDim2.new(0.0599999987, 0, 0.0341880359, 0)
-Teir4Egg.Size = UDim2.new(0, 175, 0, 25)
-Teir4Egg.Font = Enum.Font.SourceSans
-Teir4Egg.Text = "Epic"
-Teir4Egg.TextColor3 = Color3.new(1, 1, 1)
-Teir4Egg.TextSize = 14
+AEpic.Name = "AEpic"
+AEpic.Parent = YeetusFetus
+AEpic.BackgroundColor3 = Color3.new(1, 0, 0)
+AEpic.BorderColor3 = Color3.new(1, 1, 1)
+AEpic.BorderSizePixel = 2
+AEpic.LayoutOrder = 4
+AEpic.Position = UDim2.new(0.0599999987, 0, 0.0341880359, 0)
+AEpic.Size = UDim2.new(0, 175, 0, 25)
+AEpic.Font = Enum.Font.SourceSans
+AEpic.Text = "AEpic"
+AEpic.TextColor3 = Color3.new(1, 1, 1)
+AEpic.TextSize = 14
 
-Teir1Egg.Name = "Common"
-Teir1Egg.Parent = YeetusFetus
-Teir1Egg.BackgroundColor3 = Color3.new(1, 0, 0)
-Teir1Egg.BorderColor3 = Color3.new(1, 1, 1)
-Teir1Egg.BorderSizePixel = 2
-Teir1Egg.LayoutOrder = 1
-Teir1Egg.Position = UDim2.new(0.0599999987, 0, 0.0341880359, 0)
-Teir1Egg.Size = UDim2.new(0, 175, 0, 25)
-Teir1Egg.Font = Enum.Font.SourceSans
-Teir1Egg.Text = "Common"
-Teir1Egg.TextColor3 = Color3.new(1, 1, 1)
-Teir1Egg.TextSize = 14
+ACommon.Name = "ACommon"
+ACommon.Parent = YeetusFetus
+ACommon.BackgroundColor3 = Color3.new(1, 0, 0)
+ACommon.BorderColor3 = Color3.new(1, 1, 1)
+ACommon.BorderSizePixel = 2
+ACommon.LayoutOrder = 1
+ACommon.Position = UDim2.new(0.0599999987, 0, 0.0341880359, 0)
+ACommon.Size = UDim2.new(0, 175, 0, 25)
+ACommon.Font = Enum.Font.SourceSans
+ACommon.Text = "ACommon"
+ACommon.TextColor3 = Color3.new(1, 1, 1)
+ACommon.TextSize = 14
 
-Teir2Egg.Name = "Uncommon"
-Teir2Egg.Parent = YeetusFetus
-Teir2Egg.BackgroundColor3 = Color3.new(1, 0, 0)
-Teir2Egg.BorderColor3 = Color3.new(1, 1, 1)
-Teir2Egg.BorderSizePixel = 2
-Teir2Egg.LayoutOrder = 2
-Teir2Egg.Position = UDim2.new(0.0599999987, 0, 0.0341880359, 0)
-Teir2Egg.Size = UDim2.new(0, 175, 0, 25)
-Teir2Egg.Font = Enum.Font.SourceSans
-Teir2Egg.Text = "Uncommon"
-Teir2Egg.TextColor3 = Color3.new(1, 1, 1)
-Teir2Egg.TextSize = 14
+AUncommon.Name = "AUncommon"
+AUncommon.Parent = YeetusFetus
+AUncommon.BackgroundColor3 = Color3.new(1, 0, 0)
+AUncommon.BorderColor3 = Color3.new(1, 1, 1)
+AUncommon.BorderSizePixel = 2
+AUncommon.LayoutOrder = 2
+AUncommon.Position = UDim2.new(0.0599999987, 0, 0.0341880359, 0)
+AUncommon.Size = UDim2.new(0, 175, 0, 25)
+AUncommon.Font = Enum.Font.SourceSans
+AUncommon.Text = "AUncommon"
+AUncommon.TextColor3 = Color3.new(1, 1, 1)
+AUncommon.TextSize = 14
 
-Teir3Egg.Name = "Rare"
-Teir3Egg.Parent = YeetusFetus
-Teir3Egg.BackgroundColor3 = Color3.new(1, 0, 0)
-Teir3Egg.BorderColor3 = Color3.new(1, 1, 1)
-Teir3Egg.BorderSizePixel = 2
-Teir3Egg.LayoutOrder = 3
-Teir3Egg.Position = UDim2.new(0.114999995, 0, -0.141025648, 0)
-Teir3Egg.Size = UDim2.new(0, 175, 0, 25)
-Teir3Egg.Font = Enum.Font.SourceSans
-Teir3Egg.Text = "Rare"
-Teir3Egg.TextColor3 = Color3.new(1, 1, 1)
-Teir3Egg.TextSize = 14
+ARare.Name = "ARare"
+ARare.Parent = YeetusFetus
+ARare.BackgroundColor3 = Color3.new(1, 0, 0)
+ARare.BorderColor3 = Color3.new(1, 1, 1)
+ARare.BorderSizePixel = 2
+ARare.LayoutOrder = 3
+ARare.Position = UDim2.new(0.114999995, 0, -0.141025648, 0)
+ARare.Size = UDim2.new(0, 175, 0, 25)
+ARare.Font = Enum.Font.SourceSans
+ARare.Text = "ARare"
+ARare.TextColor3 = Color3.new(1, 1, 1)
+ARare.TextSize = 14
 
-RebirthEgg.Name = "Premium"
-RebirthEgg.Parent = YeetusFetus
-RebirthEgg.BackgroundColor3 = Color3.new(1, 0, 0)
-RebirthEgg.BorderColor3 = Color3.new(1, 1, 1)
-RebirthEgg.BorderSizePixel = 2
-RebirthEgg.LayoutOrder = 6
-RebirthEgg.Position = UDim2.new(0.0599999987, 0, 0.0341880359, 0)
-RebirthEgg.Size = UDim2.new(0, 175, 0, 25)
-RebirthEgg.Font = Enum.Font.SourceSans
-RebirthEgg.Text = "Premium"
-RebirthEgg.TextColor3 = Color3.new(1, 1, 1)
-RebirthEgg.TextSize = 14
+APremium.Name = "APremium"
+APremium.Parent = YeetusFetus
+APremium.BackgroundColor3 = Color3.new(1, 0, 0)
+APremium.BorderColor3 = Color3.new(1, 1, 1)
+APremium.BorderSizePixel = 2
+APremium.LayoutOrder = 6
+APremium.Position = UDim2.new(0.0599999987, 0, 0.0341880359, 0)
+APremium.Size = UDim2.new(0, 175, 0, 25)
+APremium.Font = Enum.Font.SourceSans
+APremium.Text = "APremium"
+APremium.TextColor3 = Color3.new(1, 1, 1)
+APremium.TextSize = 14
 
 Title.Name = "Title"
 Title.Parent = MainFrame
@@ -653,57 +657,57 @@ Premium.MouseButton1Click:connect(function()
 	end
 end)
 
-Teir1Egg.MouseButton1Click:connect(function()
+ACommon.MouseButton1Click:connect(function()
 	Open1 = not Open1
 	if Open1 then
-		Teir1Egg.BackgroundColor3 = Color3.new(0,1,0)
+		ACommon.BackgroundColor3 = Color3.new(0,1,0)
 	else
-		Teir1Egg.BackgroundColor3 = Color3.new(1,0,0)
+		ACommon.BackgroundColor3 = Color3.new(1,0,0)
 	end
 end)
 
-Teir2Egg.MouseButton1Click:connect(function()
+AUncommon.MouseButton1Click:connect(function()
 	Open2 = not Open2
 	if Open2 then
-		Teir2Egg.BackgroundColor3 = Color3.new(0,1,0)
+		AUncommon.BackgroundColor3 = Color3.new(0,1,0)
 	else
-		Teir2Egg.BackgroundColor3 = Color3.new(1,0,0)
+		AUncommon.BackgroundColor3 = Color3.new(1,0,0)
 	end
 end)
 
-Teir3Egg.MouseButton1Click:connect(function()
+ARare.MouseButton1Click:connect(function()
 	Open3 = not Open3
 	if Open3 then
-		Teir3Egg.BackgroundColor3 = Color3.new(0,1,0)
+		ARare.BackgroundColor3 = Color3.new(0,1,0)
 	else
-		Teir3Egg.BackgroundColor3 = Color3.new(1,0,0)
+		ARare.BackgroundColor3 = Color3.new(1,0,0)
 	end
 end)
 
-Teir4Egg.MouseButton1Click:connect(function()
+AEpic.MouseButton1Click:connect(function()
 	Open4 = not Open4
 	if Open4 then
-		Teir4Egg.BackgroundColor3 = Color3.new(0,1,0)
+		AEpic.BackgroundColor3 = Color3.new(0,1,0)
 	else
-		Teir4Egg.BackgroundColor3 = Color3.new(1,0,0)
+		AEpic.BackgroundColor3 = Color3.new(1,0,0)
 	end
 end)
 
-Teir5Egg.MouseButton1Click:connect(function()
+ALegendary.MouseButton1Click:connect(function()
 	Open5 = not Open5
 	if Open5 then
-		Teir5Egg.BackgroundColor3 = Color3.new(0,1,0)
+		ALegendary.BackgroundColor3 = Color3.new(0,1,0)
 	else
-		Teir5Egg.BackgroundColor3 = Color3.new(1,0,0)
+		ALegendary.BackgroundColor3 = Color3.new(1,0,0)
 	end
 end)
 
-RebirthEgg.MouseButton1Click:connect(function()
+APremium.MouseButton1Click:connect(function()
 	OpenRebirth = not OpenRebirth
 	if OpenRebirth then
-		RebirthEgg.BackgroundColor3 = Color3.new(0,1,0)
+		APremium.BackgroundColor3 = Color3.new(0,1,0)
 	else
-		RebirthEgg.BackgroundColor3 = Color3.new(1,0,0)
+		APremium.BackgroundColor3 = Color3.new(1,0,0)
 	end
 end)
 
@@ -771,12 +775,12 @@ Premium,
 Equip,
 YeetusFetus,
 UIListLayout_2,
-Teir5Egg,
-Teir4Egg,
-Teir1Egg,
-Teir2Egg,
-Teir3Egg,
-RebirthEgg,
+ALegendary,
+AEpic,
+ACommon,
+AUncommon,
+ARare,
+APremium,
 Title,
 Title_2,
 Title_3,
