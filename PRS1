@@ -130,6 +130,8 @@ local LegendaryIds = {
 	"rbxassetid://3877246877", --["Guardian Angel"] // rarity = "Legendary"
 	"rbxassetid://3656843464", --["Rift Observer"] // rarity = "Legendary"
 	"rbxassetid://3652596674", --["Shiny Rift Observer"] // rarity = "Legendary"
+	"rbxassetid://3652597129", --["Singularity"] // rarity = "Legendary"
+	"rbxassetid://3652597389", --["Warped Wraith"] // rarity = "Legendary"
 
 }
 local PremiumIds = {
